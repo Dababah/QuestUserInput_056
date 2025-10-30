@@ -66,3 +66,13 @@ onValueChange = {
     )),
     thickness = dimensionResource(R.dimen.divider_tipis),
     color = color.darkgray)
+
+    Button(
+        modifier = Modifier.fillmaxwidth(1f),
+        enabled = textAlamat.isNoEmpty(),
+        onClick = {
+            nama=textNama
+            jenis=textJK
+            alamat=textAlamat
+        }
+    )
