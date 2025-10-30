@@ -1,5 +1,8 @@
 package com.example.questuserinput_056
 
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.ui.res.dimensionResource
+
 @Composable
 fun FormDataDiri(modifier: Modifier
 ){
@@ -56,3 +59,10 @@ modifier = Modifier.width(250.dp),
 label = {Text(text = "Alamat Lengkap")},
 onValueChange = {
     textAlamat = it
+
+    HorizontalDivider(
+        modifier = Modifier.padding = dimensionResource(R.dimen.padding_medium) top = di
+         = R.dimen.padding_medium
+    )),
+    thickness = dimensionResource(R.dimen.divider_tipis),
+    color = color.darkgray)
