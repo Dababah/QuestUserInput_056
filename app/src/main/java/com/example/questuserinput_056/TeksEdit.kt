@@ -1,6 +1,7 @@
 package com.example.questuserinput_056
 
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
@@ -99,5 +100,12 @@ onValueChange = {
                 modifier = Modifier
                     .height(100.dp)
                     .width(300.dp)
+            }
+            {
+                Column (modifier = Modifier.padding(horizontal = 5.dp,vertical = 15.dp),){
+                    Text(text = "Nama :"+nama, color = color.white)
+                    Text(text = "Gender :"+jenis, color = color.white)
+                  Text(text = "Alamat :"+alamat, color = color.white)
+                }
             }
 
